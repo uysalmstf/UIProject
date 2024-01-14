@@ -58,7 +58,7 @@ namespace WinFormsApp1
                 // Add individual properties to ListView columns
                 ListViewItem item = new ListViewItem(new string[]
                 {
-                    jsonObject.Record.minter.ToString(),
+                    jsonObject.Record.Minter.ToString(),
                     jsonObject.Record.TokenId.ToString(),
                     jsonObject.Record.PricePaid.ToString()
                 });
@@ -137,7 +137,7 @@ public class MinterObjGeneral
 public class MinterObj
 {
     public string ID { get; set; }
-    public string minter { get; set; }
+    public string Minter { get; set; }
     public string TokenId { get; set; }
     public string PricePaid { get; set; }
 }
